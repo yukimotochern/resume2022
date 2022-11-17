@@ -1,6 +1,7 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.7.28)  7 APR 2022 00:23
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.7.28)  17 NOV 2022 16:20
 entering extended mode
- \write18 enabled.
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
 **main
 (./main.tex
@@ -58,9 +59,20 @@ LaTeX Info: Composite with undeclared \b in encoding L8U on input line 278.
 LaTeX Warning: File `creationdate.lua' already exists on the system.
                Not generating it from this source.
 
-runsystem(texlua creationdate.lua)...executed.
 
-(./creationdate.timestamp) (/usr/local/texlive/2021/texmf-dist/tex/latex/xcolor/xcolor.sty
+/usr/local/texlive/2021/texmf-dist/tex/latex/pdfx/pdfx.sty:1285: Package pdfx Error: CreationDate is not properly supported;
+ PDF validation may fail..
+
+See the pdfx package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1285 ...put-driver="xdvipdfmx -z 0" <filename> }
+                                                  
+To avoid this problem use:
+ xelatex -shell-escape -output-driver="xdvipdfmx -z 0" <filename> 
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
  (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
@@ -299,7 +311,7 @@ Package: pgfrcs 2020/12/27 v3.1.8b (3.1.8b)
 \pgfkeys@tmptoks=\toks22
 ))) (/usr/local/texlive/2021/texmf-dist/tex/latex/tools/shellesc.sty
 Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
-Package shellesc Info: Unrestricted shell escape enabled on input line 75.
+Package shellesc Info: Restricted shell escape enabled on input line 77.
 )
 \csv@file=\read4
 \c@csvinputline=\count277
@@ -864,7 +876,7 @@ Package fontspec Info: Font family 'DFHeiLight-B5(0)' created for font
 (fontspec)             <->"DFHeiLight-B5/OT:language=dflt;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
-(./main.aux)
+No file main.aux.
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 100.
@@ -877,7 +889,7 @@ LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 100.
 LaTeX Font Info:    ... okay on input line 100.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 100.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 100.
- (/usr/local/texlive/2021/texmf-dist/tex/latex/base/ts1cmr.fd
+(/usr/local/texlive/2021/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 100.
@@ -904,10 +916,12 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 100.
 LaTeX Info: Redefining \pageref on input line 100.
 LaTeX Info: Redefining \nameref on input line 100.
- (./main.out) (./main.out)
 \@outlinefile=\write10
 \openout10 = `main.out'.
 
+
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1019,32 +1033,27 @@ Overfull \hbox (24.59961pt too wide) in paragraph at lines 126--126
  []
 
 
-Overfull \hbox (5.7721pt too wide) in paragraph at lines 150--157
-[][] [] [] [] 
- []
-
-
-Overfull \hbox (0.12268pt too wide) in paragraph at lines 160--171
-[] [] [] [] 
- []
-
-
-Overfull \hbox (2.49998pt too wide) in paragraph at lines 239--239
+Overfull \hbox (2.49998pt too wide) in paragraph at lines 232--232
 [][] []  
  []
 
 
-Overfull \hbox (2.49998pt too wide) in paragraph at lines 247--247
+Overfull \hbox (2.49998pt too wide) in paragraph at lines 238--238
 [][] []  
  []
 
 
-Overfull \hbox (2.49998pt too wide) in paragraph at lines 257--257
+Overfull \hbox (2.49998pt too wide) in paragraph at lines 250--250
 [][] []  
  []
 
 
-Overfull \hbox (2.49998pt too wide) in paragraph at lines 263--263
+Overfull \hbox (2.49998pt too wide) in paragraph at lines 260--260
+[][] []  
+ []
+
+
+Overfull \hbox (2.49998pt too wide) in paragraph at lines 267--267
 [][] []  
  []
 
@@ -1054,16 +1063,22 @@ Overfull \hbox (2.49998pt too wide) in paragraph at lines 263--263
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 34490 strings out of 476919
- 706050 string characters out of 5821840
- 1100550 words of memory out of 5000000
- 53858 multiletter control sequences out of 15000+600000
- 404465 words of font info for 85 fonts, out of 8000000 for 9000
+ 34471 strings out of 476919
+ 705712 string characters out of 5821840
+ 1078172 words of memory out of 5000000
+ 53849 multiletter control sequences out of 15000+600000
+ 404457 words of font info for 84 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 103i,6n,107p,522b,2061s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 103i,6n,107p,522b,2054s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on main.pdf (1 page).
